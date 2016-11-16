@@ -51,7 +51,7 @@ public class BoardController {
 //	}
 	
 	@RequestMapping(value="/register", method = RequestMethod.POST)
-	public String requestRegisterPro(Board board, RedirectAttributes rttr) throws Exception {
+	public String requestRegisterPro(Board board, RedirectAttributes rttr) throws Exception {//Exception나면 톰켓에 던진다. 톰켓이 호출지점이여서
 		
 		logger.info("글쓰기를 요청함.");
 		
